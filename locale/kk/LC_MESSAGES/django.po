@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-04 23:32+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+#: .\ads\templates\ads\create_ad.html:4 .\olx_clone\templates\home.html:11
+msgid "Создать объявление"
+msgstr "Жарнама жасау"
+
+#: .\ads\templates\ads\create_ad.html:7
+msgid "Создать новое объявление"
+msgstr "Жаңа жарнама жасау"
+
+#: .\ads\templates\ads\create_ad.html:12
+msgid "Заголовок"
+msgstr "Тақырып"
+
+#: .\ads\templates\ads\create_ad.html:16
+msgid "Описание"
+msgstr "Сипаттама"
+
+#: .\ads\templates\ads\create_ad.html:20
+msgid "Цена"
+msgstr "Бағасы"
+
+#: .\ads\templates\ads\create_ad.html:24
+msgid "Фото"
+msgstr "Фото"
+
+#: .\ads\templates\ads\create_ad.html:29
+msgid "Категория"
+msgstr "Санат"
+
+#: .\ads\templates\ads\create_ad.html:31
+msgid "Техника"
+msgstr "Техника"
+
+#: .\ads\templates\ads\create_ad.html:32
+msgid "Одежда"
+msgstr "Киім"
+
+#: .\ads\templates\ads\create_ad.html:33
+msgid "Услуги"
+msgstr "Қызметтер"
+
+#: .\ads\templates\ads\create_ad.html:34
+msgid "Тренд"
+msgstr "Тренд"
+
+#: .\ads\templates\ads\create_ad.html:35
+msgid "Билеты и другое"
+msgstr "Билеттер мен басқалары"
+
+#: .\ads\templates\ads\create_ad.html:39
+msgid "WhatsApp номер"
+msgstr "WhatsApp нөмер"
+
+#: .\ads\templates\ads\create_ad.html:40
+msgid "Введите номер WhatsApp"
+msgstr "WhatsApp нөмеріңізді жазыңыз."
+
+#: .\ads\templates\ads\create_ad.html:43
+msgid "Создать"
+msgstr "Жасау"
+
+#: .\ads\templates\ads\kaspi_payment.html:4
+#: .\ads\templates\ads\kaspi_payment.html:8
+msgid "Оплата через Kaspi"
+msgstr "Төлем Kaspi жүйесі арқылы"
+
+#: .\ads\templates\ads\kaspi_payment.html:9
+msgid "Для публикации объявления"
+msgstr "Жарнама жариялау үшін"
+
+#: .\ads\templates\ads\kaspi_payment.html:9
+msgid "оплатите 100 ₸ на Kaspi:"
+msgstr "Kaspi жүйесіне 100 тг төлем жасауыңызды сұраймын:"
+
+#: .\ads\templates\ads\kaspi_payment.html:11
+msgid "Kaspi номер:"
+msgstr "Kaspi нөмер:"
+
+#: .\ads\templates\ads\kaspi_payment.html:13
+msgid "После оплаты укажите имя, указанное в Kaspi, для подтверждения оплаты:"
+msgstr "Төлем жасағаннан кейін, төлемді растау үшін, Kaspi жүйесіндегі есіміңізді жазыңыз: "
+
+#: .\ads\templates\ads\kaspi_payment.html:17
+msgid "Ваше имя в Kaspi:"
+msgstr "Kaspi жүйесіндегі есіміңіз:"
+
+#: .\ads\templates\ads\kaspi_payment.html:23
+msgid "Введите ваше имя в Kaspi"
+msgstr "Kaspi жүйесіндегі есіміңізді енгізіңіз"
+
+#: .\ads\templates\ads\kaspi_payment.html:26
+msgid "Отправить"
+msgstr "Жіберу"
+
+#: .\ads\templates\ads\thanks.html:4
+msgid "Спасибо"
+msgstr "Рақмет"
+
+#: .\ads\templates\ads\thanks.html:7
+msgid "Спасибо за оплату!"
+msgstr "Төлем жасағаныңыз үшін рақмет!"
+
+#: .\ads\templates\ads\thanks.html:8
+msgid "Ваше объявление"
+msgstr "Сіздің жарнамаңызды"
+
+#: .\ads\templates\ads\thanks.html:8
+msgid "будет проверено администратором."
+msgstr "әкімші тексереді"
+
+#: .\ads\templates\ads\thanks.html:9
+msgid "Ожидайте публикации."
+msgstr "Басылымды күтіңіз."
+
+#: .\ads\templates\ads\thanks.html:10
+msgid "На главную"
+msgstr "Басты бетке"
+
+#: .\olx_clone\templates\home.html:5
+msgid "Главная страница"
+msgstr "Басты бет"
+
+#: .\olx_clone\templates\home.html:9
+msgid "Добро пожаловать на AlmaX!"
+msgstr "AlmaX-қа қош келдіңіз!"
+
+#: .\olx_clone\templates\home.html:10
+msgid "Здесь вы можете размещать свои объявления или находить нужные товары."
+msgstr "Мұнда сіз өз жарнамаңызды орналастыра аласыз немесе өзіңізге қажетті өнімді таба аласыз."
+
+#: .\olx_clone\templates\home.html:14
+msgid "Объявления"
+msgstr "Жарнамалар"
+
+#: .\olx_clone\templates\home.html:21
+msgid "Все категории"
+msgstr "Барлық категориялар"
+
+#: .\olx_clone\templates\home.html:30
+msgid "Фильтровать"
+msgstr "Сұрыптау"
+
+#: .\olx_clone\templates\home.html:43
+msgid "Поиск объявлений..."
+msgstr "Жарнаманы іздеу..."
+
+#: .\olx_clone\templates\home.html:47
+msgid "Искать"
+msgstr "Іздеу"
+
+#: .\olx_clone\templates\home.html:63
+msgid "Нет фото"
+msgstr "Фото жоқ"
+
+#: .\olx_clone\templates\home.html:70 .\users\templates\users\profile.html:19
+msgid "Цена:"
+msgstr "Бағасы"
+
+#: .\olx_clone\templates\home.html:71 .\users\templates\users\profile.html:20
+msgid "Категория:"
+msgstr "Санат:"
+
+#: .\olx_clone\templates\home.html:75 .\users\templates\users\profile.html:23
+msgid "Связаться через WhatsApp"
+msgstr "WhatsApp арқылы байланысу"
+
+#: .\olx_clone\templates\home.html:86
+msgid "Объявления не найдены."
+msgstr "Жарнама табылмады."
+
+#: .\users\templates\users\login.html:7
+msgid "Вход"
+msgstr "Кіру"
+
+#: .\users\templates\users\login.html:10
+msgid "Имя пользователя:"
+msgstr "Қолданушы есімі"
+
+#: .\users\templates\users\login.html:12
+msgid "Пароль"
+msgstr "Құпиясөз"
+
+#: .\users\templates\users\profile.html:4
+msgid "Профиль"
+msgstr "Профиль"
+
+#: .\users\templates\users\profile.html:8
+msgid "Профиль:"
+msgstr "Профиль:"
+
+#: .\users\templates\users\profile.html:9
+msgid "Email:"
+msgstr "Электронды почта:"
+
+#: .\users\templates\users\profile.html:10
+msgid "Дата регистрации:"
+msgstr "Тіркелген  күн:"
+
+#: .\users\templates\users\profile.html:12
+msgid "Ваши объявления:"
+msgstr "Сіздің жарнамаларыңыз:"
+
+#: .\users\templates\users\profile.html:30
+msgid "Вы уверены, что хотите удалить это объявление?"
+msgstr "Бұл жарнаманы өшіргіңіз келетініне сенімдісіз бе?"
+
+#: .\users\templates\users\profile.html:31
+msgid "Удалить"
+msgstr "Өшіру"
+
+#: .\users\templates\users\profile.html:39
+msgid "У вас пока нет объявлений."
+msgstr "Сізде жарнама жоқ."

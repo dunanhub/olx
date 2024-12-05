@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Создать объявление" %}{% endblock %}
+
+{% block content %}
+
+<h2>{% trans "Создать новое объявление" %}</h2>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <div class="mb-3">
+        <label for="title" class="form-label">{% trans "Заголовок" %}</label>
+        <input type="text" class="form-control" id="title" name="title" required>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">{% trans "Описание" %}</label>
+        <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">{% trans "Цена" %}</label>
+        <input type="number" class="form-control" id="price" name="price" step="0.01" required>
+    </div>
+    <div class="mb-3">
+        <label for="image" class="form-label">{% trans "Фото" %}</label>
+        <input type="file" class="form-control" id="image" name="image">
+    </div>
+     <!-- Поле для выбора категории -->
+     <div class="mb-3">
+        <label for="id_category" class="form-label">{% trans "Категория" %}</label>
+        <select name="category" class="form-select" id="id_category" required>
+            <option value="technics">{% trans "Техника" %}</option>
+            <option value="clothing">{% trans "Одежда" %}</option>
+            <option value="services">{% trans "Услуги" %}</option>
+            <option value="trend">{% trans "Тренд" %}</option>
+            <option value="tickets and others">{% trans "Билеты и другое" %}</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="whatsapp_number" class="form-label">{% trans "WhatsApp номер" %}</label>
+        <input type="text" class="form-control" id="whatsapp_number" name="whatsapp_number" placeholder="{% trans 'Введите номер WhatsApp' %}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">{% trans "Создать" %}</button>
+</form>
+{% endblock %}

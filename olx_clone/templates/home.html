@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+
+{% load i18n %}  <!-- Загрузка тега перевода -->
+
+{% block title %}{% trans "Главная страница" %}{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>{% trans "Добро пожаловать на AlmaX!" %}</h1>
+    <p>{% trans "Здесь вы можете размещать свои объявления или находить нужные товары." %}</p>
+    <a href="/ads/create/" class="btn btn-primary btn-lg">{% trans "Создать объявление" %}</a>
+</div>
+
+<h1 class="mt-5">{% trans "Объявления" %}</h1>
+
+<!-- Фильтр по категориям -->
+<div class="mb-4">
+    <form method="GET" action="/" class="row">
+        <div class="col-md-6">
+            <select name="category" class="form-select">
+                <option value="">{% trans "Все категории" %}</option>
+                {% for value, name in categories %}
+                <option value="{{ value }}" {% if request.GET.category == value %}selected{% endif %}>
+                    {{ name }}
+                </option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-6">
+            <button type="submit" class="btn btn-primary w-100">{% trans "Фильтровать" %}</button>
+        </div>
+    </form>
+</div>
+
+<!-- Поле поиска -->
+<div class="mb-4">
+    <form method="GET" action="/" class="row">
+        <div class="col-md-10">
+            <input 
+                type="text" 
+                name="q" 
+                class="form-control" 
+                placeholder="{% trans 'Поиск объявлений...' %}" 
+                value="{{ request.GET.q }}">
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary w-100">{% trans "Искать" %}</button>
+        </div>
+    </form>
+</div>
+
+<hr>
+
+<!-- Список объявлений -->
+{% if ads %}
+    {% for ad in ads %}
+
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                {% if ad.image %}
+                <img src="{{ ad.image.url }}" class="img-fluid rounded-start" alt="{{ ad.title }}">
+                {% else %}
+                <img src="https://via.placeholder.com/150" class="img-fluid rounded-start" alt="{% trans 'Нет фото' %}">
+                {% endif %}
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ ad.title }}</h5>
+                    <p class="card-text">{{ ad.description }}</p>
+                    <p class="card-text"><strong>{% trans "Цена:" %}</strong> {{ ad.price }} ₸</p>
+                    <p class="card-text"><strong>{% trans "Категория:" %}</strong> {{ ad.get_category_display }}</p>
+                    <p>
+                    {% if ad.is_paid %}
+                    <span class="badge bg-success">{% trans "Оплачено" %}</span>
+                    {% else %}
+                    <span class="badge bg-danger">{% trans "Не оплачено" %}</span>
+                    {% endif %}
+                    </p>
+
+                    {% if ad.whatsapp_number %}
+                    <p>
+                        <a href="https://wa.me/{{ ad.whatsapp_number }}" class="btn btn-success" target="_blank">
+                            <i class="bi bi-whatsapp"></i>{% trans "Связаться через WhatsApp" %}
+                        </a>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+{% else %}
+    <!-- Сообщение, если объявлений нет -->
+    <p class="text-center">{% trans "Объявления не найдены." %}</p>
+{% endif %}
+{% endblock %}

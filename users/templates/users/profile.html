@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Профиль" %}{% endblock %}
+
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1>{% trans "Профиль:" %} {{ user.username }}</h1>
+    <p><strong>{% trans "Email:" %}</strong> {{ user.email }}</p>
+    <p><strong>{% trans "Дата регистрации:" %}</strong> {{ user.date_joined }}</p>
+
+    <h2>{% trans "Ваши объявления:" %}</h2>
+    {% if user_ads %}
+        <ul class="list-group">
+            {% for ad in user_ads %}
+            <li class="list-group-item">
+                <h5>{{ ad.title }}</h5>
+                <p>{{ ad.description }}</p>
+                <p><strong>{% trans "Цена:" %}</strong> {{ ad.price }} ₸</p>
+                <p><strong>{% trans "Категория:" %}</strong> {{ ad.get_category_display }}</p>
+                <p>
+                    <a href="https://wa.me/{{ ad.whatsapp_number }}" class="btn btn-success btn-sm" target="_blank">
+                        <i class="bi bi-whatsapp"></i> {% trans "Связаться через WhatsApp" %}
+                    </a>
+                </p>
+                {% if ad.user == request.user %}
+                <form method="POST" action="{% url 'delete_ad' ad.id %}" style="display: inline;">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger btn-sm" 
+                            onclick="return confirm('{% blocktrans %}Вы уверены, что хотите удалить это объявление?{% endblocktrans %}');">
+                        {% trans "Удалить" %}
+                    </button>
+                </form>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>{% trans "У вас пока нет объявлений." %}</p>
+    {% endif %}
+</div>
+{% endblock %}

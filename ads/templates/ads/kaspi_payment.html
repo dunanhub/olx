@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Оплата через Kaspi" %}{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h2 class="text-center">{% trans "Оплата через Kaspi" %}</h2>
+    <p>{% trans "Для публикации объявления" %} <strong>"{{ ad.title }}"</strong> {% trans "оплатите 100 ₸ на Kaspi:" %}</p>
+    <div class="alert alert-info">
+        <p><strong>{% trans "Kaspi номер:" %}</strong> <span class="text-primary">+7 (777) 288 56 18</span></p>
+    </div>
+    <p>{% trans "После оплаты укажите имя, указанное в Kaspi, для подтверждения оплаты:" %}</p>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="kaspi_name" class="form-label">{% trans "Ваше имя в Kaspi:" %}</label>
+            <input 
+                type="text" 
+                id="kaspi_name" 
+                name="kaspi_name" 
+                class="form-control" 
+                placeholder="{% trans 'Введите ваше имя в Kaspi' %}" 
+                required>
+        </div>
+        <button type="submit" class="btn btn-success w-100">{% trans "Отправить" %}</button>
+    </form>
+</div>
+{% endblock %}

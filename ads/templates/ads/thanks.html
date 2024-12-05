@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Спасибо" %}{% endblock %}
+
+{% block content %}
+{
+<h2>{% trans "Спасибо за оплату!" %}</h2>
+<p>{% trans "Ваше объявление" %} "{{ ad.title }}" {% trans "будет проверено администратором." %}</p>
+<p>{% trans "Ожидайте публикации." %}</p>
+<a href="/" class="btn btn-primary">{% trans "На главную" %}</a>
+{% endblock %}

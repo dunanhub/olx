@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-04 23:32+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\ads\templates\ads\create_ad.html:4 .\olx_clone\templates\home.html:11
+msgid "Создать объявление"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:7
+msgid "Создать новое объявление"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:12
+msgid "Заголовок"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:16
+msgid "Описание"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:20
+msgid "Цена"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:24
+msgid "Фото"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:29
+msgid "Категория"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:31
+msgid "Техника"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:32
+msgid "Одежда"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:33
+msgid "Услуги"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:34
+msgid "Тренд"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:35
+msgid "Билеты и другое"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:39
+msgid "WhatsApp номер"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:40
+msgid "Введите номер WhatsApp"
+msgstr ""
+
+#: .\ads\templates\ads\create_ad.html:43
+msgid "Создать"
+msgstr ""
+
+#: .\ads\templates\ads\kaspi_payment.html:4
+#: .\ads\templates\ads\kaspi_payment.html:8
+msgid "Оплата через Kaspi"
+msgstr ""
+
+#: .\ads\templates\ads\kaspi_payment.html:9
+msgid "Для публикации объявления"
+msgstr ""
+
+#: .\ads\templates\ads\kaspi_payment.html:9
+msgid "оплатите 100 ₸ на Kaspi:"
+msgstr ""
+
+#: .\ads\templates\ads\kaspi_payment.html:11
+msgid "Kaspi номер:"
+msgstr ""
+
+#: .\ads\templates\ads\kaspi_payment.html:13
+msgid "После оплаты укажите имя, указанное в Kaspi, для подтверждения оплаты:"
+msgstr ""
+
+#: .\ads\templates\ads\kaspi_payment.html:17
+msgid "Ваше имя в Kaspi:"
+msgstr ""
+
+#: .\ads\templates\ads\kaspi_payment.html:23
+msgid "Введите ваше имя в Kaspi"
+msgstr ""
+
+#: .\ads\templates\ads\kaspi_payment.html:26
+msgid "Отправить"
+msgstr ""
+
+#: .\ads\templates\ads\thanks.html:4
+msgid "Спасибо"
+msgstr ""
+
+#: .\ads\templates\ads\thanks.html:7
+msgid "Спасибо за оплату!"
+msgstr ""
+
+#: .\ads\templates\ads\thanks.html:8
+msgid "Ваше объявление"
+msgstr ""
+
+#: .\ads\templates\ads\thanks.html:8
+msgid "будет проверено администратором."
+msgstr ""
+
+#: .\ads\templates\ads\thanks.html:9
+msgid "Ожидайте публикации."
+msgstr ""
+
+#: .\ads\templates\ads\thanks.html:10
+msgid "На главную"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:5
+msgid "Главная страница"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:9
+msgid "Добро пожаловать на AlmaX!"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:10
+msgid "Здесь вы можете размещать свои объявления или находить нужные товары."
+msgstr ""
+
+#: .\olx_clone\templates\home.html:14
+msgid "Объявления"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:21
+msgid "Все категории"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:30
+msgid "Фильтровать"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:43
+msgid "Поиск объявлений..."
+msgstr ""
+
+#: .\olx_clone\templates\home.html:47
+msgid "Искать"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:63
+msgid "Нет фото"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:70 .\users\templates\users\profile.html:19
+msgid "Цена:"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:71 .\users\templates\users\profile.html:20
+msgid "Категория:"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:75 .\users\templates\users\profile.html:23
+msgid "Связаться через WhatsApp"
+msgstr ""
+
+#: .\olx_clone\templates\home.html:86
+msgid "Объявления не найдены."
+msgstr ""
+
+#: .\users\templates\users\login.html:7
+msgid "Вход"
+msgstr ""
+
+#: .\users\templates\users\login.html:10
+msgid "Имя пользователя:"
+msgstr ""
+
+#: .\users\templates\users\login.html:12
+msgid "Пароль"
+msgstr ""
+
+#: .\users\templates\users\profile.html:4
+msgid "Профиль"
+msgstr ""
+
+#: .\users\templates\users\profile.html:8
+msgid "Профиль:"
+msgstr ""
+
+#: .\users\templates\users\profile.html:9
+msgid "Email:"
+msgstr ""
+
+#: .\users\templates\users\profile.html:10
+msgid "Дата регистрации:"
+msgstr ""
+
+#: .\users\templates\users\profile.html:12
+msgid "Ваши объявления:"
+msgstr ""
+
+#: .\users\templates\users\profile.html:30
+msgid "Вы уверены, что хотите удалить это объявление?"
+msgstr ""
+
+#: .\users\templates\users\profile.html:31
+msgid "Удалить"
+msgstr ""
+
+#: .\users\templates\users\profile.html:39
+msgid "У вас пока нет объявлений."
+msgstr ""

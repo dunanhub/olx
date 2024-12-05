@@ -1,0 +1,28 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <title>Вход</title>
+</head>
+<body>
+    <form method="post" action="{% url 'set_language' %}">
+        {% csrf_token %}
+        <select name="language">
+            <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
+            <option value="ru" {% if LANGUAGE_CODE == 'ru' %}selected{% endif %}>Русский</option>
+            <option value="kk" {% if LANGUAGE_CODE == 'kk' %}selected{% endif %}>Қазақша</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Изменить язык</button>
+    </form>
+
+    <h2>{% trans "Вход" %}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="username">{% trans "Имя пользователя:" %}</label>
+        <input type="text" name="username" id="username" required><br>
+        <label for="password">{% trans "Пароль" %}:</label>
+        <input type="password" name="password" id="password" required><br>
+        <button type="submit" class="btn btn-primary">{% trans "Войти" %}</button>
+    </form>
+</body>
+</html>
